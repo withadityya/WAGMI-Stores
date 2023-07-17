@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  padding: 0px 50px; /*here 0px is the padding on top and bottom, while 100px means 100px padding on right and left so that the elements doesn't touch the edges directly*/
+  position: fixed; /*sticks the navbar even when scrolling*/
+  background-color: white;
+}
+
+.menu{
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+  color: black;
+}
+
+.menu li{
+  margin-right: 50px;
+}
+
+.menu li a{
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  color: black;
+}
+
+.logo img{
+  width: 100%;
+  height: 130px;
+}
+
+.cover-image img{
+  width: 100%;
+  height: 100vh;
+  background-size: auto;
+  background-position: left;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons a {
+  margin-left: 20px;
+  color: #4b4a4a;
+  text-decoration: none;
+}
