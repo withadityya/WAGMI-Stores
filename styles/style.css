@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+.header{
+  margin: 0;
+}
+
 .navbar{
   display: flex;
   font-family: 'Poppins', sans-serif;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100%; 
   height: 65px;
   padding: 0px 50px; /*here 0px is the padding on top and bottom, while 100px means 100px padding on right and left so that the elements doesn't touch the edges directly*/
   position: fixed; /*sticks the navbar even when scrolling*/
@@ -55,4 +59,67 @@
   margin-left: 20px;
   color: #4b4a4a;
   text-decoration: none;
+}
+
+.section2{
+  width: 100%;
+  height: 85vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.wagmistores{
+  align-items: center;
+  height: 360px;
+}
+
+.section2intro{
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  padding-top: .0000005%;
+}
+
+.section2smalltext{
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 465px;
+}
+
+/* Set the width of the container to create the horizontal line */
+.brand-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Apply flexbox to center the brand names horizontally */
+.brand-scroll {
+  display: flex;
+  animation: scroll-left 20s linear infinite; /* Adjust the animation duration as needed */
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  justify-content: space-evenly;
+}
+
+/* Add equal spacing between brand names */
+.brand-scroll h4 {
+  margin-right: 30px; /* Adjust spacing between brand names as needed */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move the brand names 100% of their total width to the left */
 }
